@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NVPulse: Nvidia news and earnings</title>
+<style>
+:root{--bg:#f5f6f2;--surface:#fff;--text:#16181a;--muted:#5d6468;--line:#dfe2dc;--accent:#4d7c0f;--accent-bg:#eaf3d8;--warn-bg:#fdf0d5}
+@media (prefers-color-scheme:dark){:root{--bg:#121410;--surface:#1b1e18;--text:#eceee8;--muted:#a0a79b;--line:#2d3228;--accent:#9bd23c;--accent-bg:#26331a;--warn-bg:#3a2e14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 Georgia,"Times New Roman",serif;-webkit-text-size-adjust:100%}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{border-bottom:1px solid var(--line)}
+.bar{max-width:720px;margin:0 auto;padding:14px 18px}
+.logo{font-weight:800;letter-spacing:.08em;font-size:15px}.logo b{color:var(--accent)}
+main{max-width:720px;margin:0 auto;padding:24px 18px 8px}
+.eyebrow{font-size:13px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+h1{font-size:30px;line-height:1.2;margin:8px 0 12px}
+h2{font-size:22px;margin:34px 0 8px}
+.lede{font-size:19px;border-left:3px solid var(--accent);padding-left:14px;margin:20px 0}
+.note{background:var(--warn-bg);border-radius:10px;padding:12px 14px;font-size:15px;margin:20px 0}
+.tablewrap{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--accent-bg)}
+tr:last-child td{border-bottom:0}
+h3{font-size:16px;margin:22px 0 0}.blurb{font-size:13px;color:var(--muted);margin:0}
+ul.news{list-style:none;padding:0;margin:8px 0}
+ul.news li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.news a{color:var(--text);font-weight:600;text-decoration:none}
+ul.news small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.upd{font-size:13px;color:var(--muted)}
+footer{max-width:720px;margin:30px auto 0;padding:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="sans"><div class="bar"><div class="logo">NV<b>PULSE</b></div></div></header>
+<main>
+<div class="eyebrow sans">Investor Pulse · Earnings call preview</div>
+<h1>Nvidia reports Q3 fiscal 2027 on 17 November: what to watch on the call</h1>
+
+<p class="lede">Nvidia reports results for the quarter ended 25 October 2026 after the US market close on 17 November. Analysts expect revenue of about $108.8 billion to $109 billion and earnings of $2.47 a share. The call starts at 2 pm Pacific (5 pm Eastern).</p>
+
+<div class="note sans"><strong>The analysis below was written before the results.</strong> The news lists further down update automatically from four sources.</div>
+
+<h2>The numbers going in</h2>
+<div class="tablewrap sans"><table>
+<tr><th>Item</th><th>Figure</th></tr>
+<tr><td>Q2 FY2027 revenue (reported 26 Aug)</td><td>$96.2 billion, up 18% on the quarter and 106% on a year earlier</td></tr>
+<tr><td>Q2 data center revenue</td><td>$89.0 billion, up 117% on the year</td></tr>
+<tr><td>Nvidia’s own Q3 revenue guide</td><td>About $108.0 billion</td></tr>
+<tr><td>Analyst consensus, Q3 revenue</td><td>$108.8 billion to $109 billion</td></tr>
+<tr><td>Analyst consensus, Q3 earnings per share</td><td>$2.47</td></tr>
+</table></div>
+
+<h2>What to watch</h2>
+<p><strong>Revenue against the guide.</strong> Consensus sits slightly above Nvidia’s own guide, so a small beat is already expected. The question is how large it is and what the fourth-quarter guide says about demand.</p>
+<p><strong>Rubin and Blackwell.</strong> Nvidia said last quarter that it built inventory ahead of the Vera Rubin launch in the third quarter, and that Blackwell was still the vast majority of revenue. Analysts will look for the first real Rubin revenue.</p>
+<p><strong>Margins and memory costs.</strong> Consensus for data center gross margin in fiscal 2027 is about 73.7%, below the 78% of fiscal 2024 and 2025. Higher memory prices could be passed on to buyers of systems and cloud capacity in 2027.</p>
+
+<h2>Latest news</h2>
+<div class="sans">
+{{SECTIONS}}
+</div>
+<p class="upd sans">Newest item: {{UPDATED}}. Checked hourly from four sources: Nvidia Newsroom, SEC EDGAR, Google News and Tom’s Hardware.</p>
+</main>
+<footer class="sans">NVPulse · Independent from NVIDIA · Not affiliated with or endorsed by NVIDIA. Not investment advice. Headlines link to their original publishers.</footer>
+</body>
+</html>
