@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
 # SEC asks every script to identify itself. Put your own email here.
-USER_AGENT = "NVPulse/1.0 your-email@example.com"
+USER_AGENT = "NVPulse/1.0 bruno.mg.horta@gmail.com"
 MAX_ITEMS = 8
 ATOM = "{http://www.w3.org/2005/Atom}"
 
