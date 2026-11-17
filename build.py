@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
 # SEC asks every script to identify itself. Put your own email here.
-USER_AGENT = "NVPulse/1.0 bruno.mg.horta@gmail.com"
+USER_AGENT = "NVPulse/1.0 your-email@example.com"
 MAX_ITEMS = 8
 ATOM = "{http://www.w3.org/2005/Atom}"
 
@@ -85,7 +85,7 @@ def main():
             rows.append('<li><a href="{}">{}</a><small>{}</small></li>'.format(
                 html.escape(link, quote=True), html.escape(title), when))
         sections.append(
-            '<h3>{}</h3><p class="blurb">{}</p><ul class="news sans">{}</ul>'.format(
+            '<div class="src"><h3>{}</h3><p class="blurb">{}</p><ul class="news">{}</ul></div>'.format(
                 html.escape(name), html.escape(blurb), "\n".join(rows)))
         print("OK", name, len(items))
 
